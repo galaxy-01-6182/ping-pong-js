@@ -283,3 +283,48 @@ function keyDownHandler(){
 	   
 	
 }
+
+// events
+
+window.onkeydown = function(key){
+	
+	 key = key || window.event;
+	 
+	 if(key.keyCode == '38'){
+	 	
+	 	  upArrowPressed = true
+	 	
+	 } else if(key.keyCode == '40'){
+	 	
+	 	  downArrowPressed = true
+	 	
+	 }
+	  
+	  
+	 return;
+	
+	
+}
+
+window.onkeyup = function(key){
+	
+	 key = key || window.event;
+	 
+	 if(key.keyCode == '38'){
+	 	
+	 	  upArrowPressed = false
+	 	
+	 } else if(key.keyCode == '40'){
+	 	
+	 	  downArrowPressed = false
+	 	
+	 }
+	  
+	  
+	 return;
+	
+	
+}
+
+
+
